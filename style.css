@@ -1,0 +1,38 @@
+:root {
+    --main-bg-color: gray;
+}
+
+.one {
+    background-color: var(--main-bg-color);
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.two {
+    background-color: green;
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.three {
+    background-color: var(--main-bg-color, yellow);
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.four {
+    background-color: var(--test, darkblue); /* uses darkblue for fallback*/
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.five {
+    background-color: red;
+    background-color: var(--test); /*overrides red color, default color if var() invalid*/
+    margin: 10px;
+    font-size: 30px;
+}
